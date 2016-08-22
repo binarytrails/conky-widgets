@@ -18,6 +18,7 @@ I will mainly use these but there are more:
 	$ conky -h
 	Usage: conky [OPTION]...
 	   ...
+       -q, --quiet               quiet mode
 	   -D, --debug               increase debugging output, ie. -DD for more debugging
 	   -d, --daemonize           daemonize, fork to background
 	   -x X                      x position
@@ -33,7 +34,7 @@ Then, you can test them with:
 
 You can put the below command in ```~/.xprofile``` file.
 
-    conky -d -x -1000 -y 1000 -c ~/.conky/widgets/<name>/conkyrc
+    conky -qd -x -1000 -y 1000 -c ~/.conky/widgets/<name>/conkyrc
 
 It will put your widget on the top right screen corner.
 

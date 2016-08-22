@@ -50,10 +50,10 @@ uppercase no
 default_color FFFFFF
  
 # -- Lua Load -- #
-lua_load ./.conky/clock-rings/rings.lua
+lua_load ./.conky/widgets/clock-rings/rings.lua
 lua_draw_hook_pre clock_rings
 
-lua_load ./.conky/clock-rings/marks.lua
+lua_load ./.conky/widgets/clock-rings/marks.lua
 lua_draw_hook_post main
  
 TEXT

@@ -1,7 +1,21 @@
 # Conky-widgets
 
-*Reviving various artists works*
+*Reviving various artist works*
 
+
+# Install
+
+These are made for Conky 1.9.0 with lua support.
+
+    mkdir -p ~/.conky
+    git clone https://github.com/sevaivanov/conky-widgets ./conky/widgets
+
+# Exploring
+
+Individually:
+
+    cd ~/
+    conky -c ~/.conky/widgets/<name>/conkyrc
 # License
 
 It's either the ones they have or these:

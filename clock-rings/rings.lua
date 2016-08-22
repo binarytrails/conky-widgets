@@ -16,13 +16,13 @@ Changelog:
 ]]
 
 settings_table = {
-	{
+	{   -- arc hours (most inner)
 		-- Edit this table to customise your rings.
 		-- You can create more rings simply by adding more elements to settings_table.
 		-- "name" is the type of stat to display; you can choose from 'cpu', 'memperc', 'fs_used_perc', 'battery_used_perc'.
 		name='time',
 		-- "arg" is the argument to the stat type, e.g. if in Conky you would write ${cpu cpu0}, 'cpu0' would be the argument. If you would not use an argument in the Conky variable, use ''.
-		arg='%I.%M',
+		arg='%l.%M',
 		-- "max" is the maximum value of the ring. If the Conky variable outputs a percentage, use 100.
 		max=12,
 		-- "bg_colour" is the colour of the base ring.
@@ -44,7 +44,7 @@ settings_table = {
 		-- "end_angle" is the ending angle of the ring, in degrees, clockwise from top. Value can be either positive or negative, but must be larger than start_angle.
 		end_angle=360
 	},
-	{
+	{   -- arc minutes
 		name='time',
 		arg='%M.%S',
 		max=60,
@@ -58,7 +58,7 @@ settings_table = {
 		start_angle=0,
 		end_angle=360
 	},
-	{
+	{   -- arc seconds
 		name='time',
 		arg='%S',
 		max=60,
@@ -80,7 +80,7 @@ settings_table = {
 		bg_colour=0xFFFFFF,
 		bg_alpha=0.0,
 		fg_colour=0xFFFFFF,
-		fg_alpha=0.1,
+		fg_alpha=0.2,
 		x=150, y=150,
 		radius=110,
 		thickness=5,

@@ -29,10 +29,14 @@ border_outer_margin 0
 minimum_size 300 300
 maximum_width 300
 maximum_height 300
- 
+
+# Seems that in Gnome-Shell it's only one X-display for n-monitors
+display :0
 alignment mm
-gap_x -1000
-gap_y -1000
+
+# Change these using: conky -x <arg> -y <arg>
+gap_x 0
+gap_y 0
  
 # -- Graphics settings -- #
 draw_shades no

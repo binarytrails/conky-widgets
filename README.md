@@ -1,7 +1,8 @@
 # Conky-widgets
 
-*Reviving various artist works*
+> Conky is a system monitor that renders text on desktop or to own transparent window. Command line options will override configurations defined in config file.
 
+The purpose is to revive and adapt the various artist works to my personal sense of aesthetics.
 
 # Install
 
@@ -12,10 +13,32 @@ These are made for Conky 1.9.0 with lua support.
 
 # Exploring
 
-Individually:
+I will mainly use these but there are more:
+
+	$ conky -h
+	Usage: conky [OPTION]...
+	   ...
+	   -D, --debug               increase debugging output, ie. -DD for more debugging
+	   -d, --daemonize           daemonize, fork to background
+	   -x X                      x position
+	   -y Y                      y position
+	   ...
+
+Then, you can test them with:
 
     cd ~/
-    conky -c ~/.conky/widgets/<name>/conkyrc
+    conky -D -c ~/.conky/widgets/<name>/conkyrc
+
+# Starting on login
+
+You can put the below command in ```~/.xprofile``` file.
+
+    conky -d -x -1000 -y 1000 -c ~/.conky/widgets/<name>/conkyrc
+
+It will put your widget on the top right screen corner.
+
+You need one conky command per widget.
+
 # License
 
 It's either the ones they have or these:

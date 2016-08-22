@@ -73,15 +73,16 @@ settings_table = {
 		end_angle=360
 	},
 	{
+        -- how much / last 24h of uptime
 		name='exec',
-		arg='~/.conky/clock-rings/uptime.sh',
-		max=12,
+		arg='~/.conky/widgets/clock-rings/uptime.sh',
+		max=24,
 		bg_colour=0xFFFFFF,
 		bg_alpha=0.0,
 		fg_colour=0xFFFFFF,
-		fg_alpha=0.0,
+		fg_alpha=0.1,
 		x=150, y=150,
-		radius=68,
+		radius=110,
 		thickness=5,
 		start_angle=0,
 		end_angle=360
